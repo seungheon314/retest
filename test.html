@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css/reset.css">
+  <title>test</title>
+<style media="screen">
+body{
+  width:100%;
+}
+.wrap{
+  width:80%;
+  background-color:black;
+  margin:auto;
+  overflow: hidden;
+  padding:5px 0;
+  }
+  .wrap:after{
+    content: '';
+    display:block;
+    clear:both;
+  }
+
+.col{
+  width:10%;
+  background-color:rgb(233, 63, 221);
+  height:50px;
+  float:left;
+  margin:0 0.55%;
+
+}
+
+@media screen and (max-width: 960px) {
+  .at-bot{
+    width:23.9%;
+    margin-bottom:5px;
+  }
+  .at-bot:last-child{
+    margin-right:none;
+  }
+  .ar-bot, .ae-bot{
+    width:18.9%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .col{
+    width:32.2%;
+    }
+    .at-bot{
+      margin-bottom:0;
+    }
+    .center{
+      margin-top:0.3rem;
+      margin-bottom: 0.3rem;
+    }
+    .col:nth-child(3),
+    .col:nth-child(6),
+    .col:nth-child(9){
+      margin-right:0;
+    }
+  }
+
+@media screen and (max-width: 480px) {
+  .col{
+    width:98.9%;
+    float:none;
+    margin:5px 0.55%;
+
+  }
+}
+
+</style>
+</head>
+
+<body>
+ <div class="wrap">
+   <div class="col at-bot"></div>
+   <div class="col at-bot"></div>
+   <div class="col at-bot"></div>
+   <div class="col at-bot center"></div>
+   <div class="col ar-bot center"></div>
+   <div class="col ar-bot center"></div>
+   <div class="col ar-bot"></div>
+   <div class="col ae-bot"></div>
+   <div class="col ae-bot"></div>
+ </div>
+</body>
+
+</html>

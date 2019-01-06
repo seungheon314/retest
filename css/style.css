@@ -1,0 +1,47 @@
+@charset "UTF-8";
+
+html,
+body {
+  height: 100%;
+}
+
+.wrap {
+  width:80%;
+  margin: auto;
+  background-color: black;
+  padding: 10px 0;
+}
+
+.wrap:after {
+display: flex;
+justify-content: space-between;
+}
+
+.col {
+height: 100px;
+width: 7%;
+background-color: #fff;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width:1280px) {}
+
+@media screen and (max-width: 960px) {}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 480px) {}
